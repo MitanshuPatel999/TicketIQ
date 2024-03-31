@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TIQApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da78b65555ad5bbc315f74cbf9ca0c392be69886")]
 [assembly: System.Reflection.AssemblyProductAttribute("TIQApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TIQApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
