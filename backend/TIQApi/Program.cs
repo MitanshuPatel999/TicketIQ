@@ -1,5 +1,5 @@
 
-namespace WebApplication1
+namespace TIQApi
 {
     public class Program
     {

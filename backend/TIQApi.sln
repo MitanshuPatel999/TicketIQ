@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TIQApi", "WebApplication1\TIQApi.csproj", "{B49E7225-67FD-49F0-91AC-496DDDDEAA0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TIQApi", "TIQApi\TIQApi.csproj", "{C88B632B-C6FA-4246-9ED2-802525F4F9B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B49E7225-67FD-49F0-91AC-496DDDDEAA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B49E7225-67FD-49F0-91AC-496DDDDEAA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B49E7225-67FD-49F0-91AC-496DDDDEAA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B49E7225-67FD-49F0-91AC-496DDDDEAA0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C88B632B-C6FA-4246-9ED2-802525F4F9B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C88B632B-C6FA-4246-9ED2-802525F4F9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C88B632B-C6FA-4246-9ED2-802525F4F9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C88B632B-C6FA-4246-9ED2-802525F4F9B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {65444BB6-C753-4B0A-A6CE-F93CC879D5F9}
+		SolutionGuid = {8D3EE506-652D-4CD4-8AF1-B3DA478BB1A8}
 	EndGlobalSection
 EndGlobal

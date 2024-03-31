@@ -433,11 +433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\TicketIQ\\backend\\TIQApi\\WebApplication1\\TIQApi.csproj",
+      "projectUniqueName": "C:\\TicketIQ\\backend\\TIQApi\\TIQApi.csproj",
       "projectName": "TIQApi",
-      "projectPath": "C:\\TicketIQ\\backend\\TIQApi\\WebApplication1\\TIQApi.csproj",
+      "projectPath": "C:\\TicketIQ\\backend\\TIQApi\\TIQApi.csproj",
       "packagesPath": "C:\\Users\\Gunjan\\.nuget\\packages\\",
-      "outputPath": "C:\\TicketIQ\\backend\\TIQApi\\WebApplication1\\obj\\",
+      "outputPath": "C:\\TicketIQ\\backend\\TIQApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Gunjan\\AppData\\Roaming\\NuGet\\NuGet.Config",
