@@ -12,7 +12,12 @@ import { AdmindashboardComponent } from './admindashboard/admindashboard.compone
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
@@ -31,12 +36,18 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     MatCardModule,
     MatButtonModule,
+    MatRadioModule,
+    MatButtonToggleModule,
+    MatSlideToggleModule,
     MatFormFieldModule,
+    MatInputModule,
     BrowserAnimationsModule,
     CommonModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot({
+      preventDuplicates: true
+    })
   ],
   providers: [
     provideAnimationsAsync()

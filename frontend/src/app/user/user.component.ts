@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule , Validators } from '@angular/forms';
 import { Router } from "@angular/router";
 import { AuthService } from '../service/auth.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-user',
@@ -10,7 +11,7 @@ import { AuthService } from '../service/auth.service';
 })
 
 export class UserComponent {
-  constructor(private builder: FormBuilder, private router: Router, private service: AuthService){
+  constructor(private builder: FormBuilder, private router: Router, private service: AuthService, private toastr:ToastrService){
     sessionStorage.clear();
   }
 
@@ -29,20 +30,21 @@ export class UserComponent {
           if(this.result.isactive){
             sessionStorage.setItem('id',this.result.id);
             sessionStorage.setItem('role',this.result.role);
+            this.toastr.success('Login done successfully!')
             this.router.navigate(['dashboard']);
           }
           else{
-            alert('Please contact admin!');
+            this.toastr.warning('Please contact admin!');
           }
         }        
         else{
-          alert('Invalid credentials!');
+          this.toastr.warning('Invalid credentials!');
         }
       }  
       );
     }
     else{
-      alert('Please enter valid data!');
+      this.toastr.warning('Please enter valid data!');
     }
   }
 }

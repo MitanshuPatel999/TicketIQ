@@ -1,1 +1,45 @@
-<p>register works!</p>
+<mat-card>
+    <mat-card-header>
+        <h2>Registeration</h2>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="registerform" (ngSubmit)="proceedRegister()">
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Username</mat-label>
+                <input matInput formControlName="username">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name">
+            </mat-form-field>
+            <p>
+            <b>Role: </b>
+            <mat-button-toggle-group formControlName="role" aria-label="Font Style">
+                <mat-button-toggle value="Admin">Admin</mat-button-toggle>
+                <mat-button-toggle value="Developer">Developer</mat-button-toggle>
+                <mat-button-toggle value="Viewer">Viewer</mat-button-toggle>
+            </mat-button-toggle-group>
+            </p>
+            <div class="btm-m">
+                <b>Is active? </b>
+                <mat-slide-toggle formControlName="isactive"></mat-slide-toggle><br>
+            </div>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input type="password" matInput formControlName="confirmpassword">
+                <span class="text-danger"
+                    *ngIf="registerform.value.password!==registerform.value.confirmpassword && registerform.value.confirmpassword!==''">
+                    Password and Confirm Password must match!
+                </span>
+            </mat-form-field>
+            <div>
+                <button mat-raised-button color="primary">Submit</button>
+                <a routerLink="/" mat-raised-button color="accent">Back to Login</a>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>
