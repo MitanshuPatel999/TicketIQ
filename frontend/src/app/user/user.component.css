@@ -15,7 +15,7 @@
 }
 h2{
     text-align: center;
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
 mat-card{
     max-width: 800px;
@@ -28,4 +28,8 @@ div{
     display: flex;
     column-gap: 20px;
     width: 500px;
+}
+
+.center{
+    align-content: center;
 }

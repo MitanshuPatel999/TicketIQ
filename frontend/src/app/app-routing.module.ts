@@ -7,6 +7,7 @@ import { AdmindashboardComponent } from './admindashboard/admindashboard.compone
 
 const routes: Routes = [
   {path:"", component:UserComponent},
+  {path:"user", component:UserComponent},
   {path:"register", component:RegisterComponent},
   {path:"dashboard", component:DashboardComponent},
   {path:"viewtickets", component:AdmindashboardComponent}

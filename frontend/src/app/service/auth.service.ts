@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { User } from '../model/user';
 
 @Injectable({
   providedIn: 'root'
@@ -8,18 +9,18 @@ export class AuthService {
 
   constructor(private http:HttpClient) { }
   id:string|null="";
-  apiUrl:string="";
+  apiUrl:string="http://localhost:3333/users";
   
   registerUser(inputData: any):any{
-    this.http.post<any>("",inputData);
+    return this.http.post<any>(this.apiUrl,inputData);
   }
 
-  getUser(id: any){
-    return this.http.get<any>(this.apiUrl,id);
+  getUser(username: any){
+    return this.http.get<any>(this.apiUrl,{params: {"username":username}});
   }
 
-  getAllUsers(id: any){
-    return this.http.get<any>(this.apiUrl,id);
+  getAllUsers(){
+    return this.http.get<any>(this.apiUrl);
   }
 
   updateUser(id: any, inputData:any){

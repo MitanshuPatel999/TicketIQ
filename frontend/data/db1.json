@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "id": "1e4a",
+      "username": "admin@gmail.com",
+      "name": "admin",
+      "password": "1234",
+      "confirmpassword": "1234",
+      "role": "Admin",
+      "isactive": true
+    }
+  ]
+}
